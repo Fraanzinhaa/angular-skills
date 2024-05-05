@@ -1,0 +1,67 @@
+.container-card {
+  width: 300px;
+  height: auto; 
+  padding: 20px;
+  background-color: #f0f0f0; 
+  border-radius: 8px; 
+  transition: background-color 0.3s ease; 
+}
+
+.mat-card-header,
+.mat-card-content,
+.mat-card-actions {
+  margin-bottom: 20px; 
+  transition: margin-bottom 0.3s ease; 
+}
+
+.mat-card-title,
+.mat-card-content p,
+.mat-card-actions button,
+.image {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.image {
+  height: 200px;
+  transition: height 0.3s ease;
+}
+
+.container-card {
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid #ccc;
+  border-top-color: #555;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

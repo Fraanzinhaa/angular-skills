@@ -1,3 +1,102 @@
-.example-card {
-    max-width: 400px;
+.container-card {
+    width: 300px;
+    height: 400px;
+    overflow: auto;
+    border-radius: 20px;
+  }
+
+  .image {
+    width: 100% !important; 
+    height: 32vh !important; 
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .container-card mat-card-content {
+    max-height: 300px; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    scrollbar-width: thin; 
+    scrollbar-color: rgba(0, 0, 0, 0.199) transparent; 
+  }
+
+  mat-card-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .container-card:hover img {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+  }
+
+  @media screen and (min-width: 1200px) {
+    .image img{
+      height: 175px !important;
+      display: block;
+    } 
+
+    .container-card mat-card-content {
+      max-height: 350px; 
+      overflow-y: auto; 
+      overflow-x: hidden;
+      scrollbar-width: thin; 
+      scrollbar-color: rgba(0, 0, 0, 0.199) transparent;
+    }
+
+    .image {
+      width: 100% !important; 
+      height: 185px !important; 
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .container-card {
+      width: 350px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+     .image img{
+      height: 175px !important;
+      display: block;
+    } 
+
+    .container-card mat-card-content {
+      max-height: 250px; 
+      overflow-y: auto; 
+      overflow-x: hidden;
+      scrollbar-width: thin; 
+      scrollbar-color: rgba(0, 0, 0, 0.199) transparent;
+    }
+
+    .image {
+      width: 100% !important; 
+      height: 185px !important; 
+      display: flex;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .image img{
+      height: 175px !important;
+      display: block;
+    } 
+
+    .container-card mat-card-content {
+      max-height: 250px; 
+      overflow-y: auto; 
+      overflow-x: hidden;
+      scrollbar-width: thin; 
+      scrollbar-color: rgba(0, 0, 0, 0.199) transparent;
+    }
+
+    .image {
+      width: 100% !important; 
+      height: 185px !important; 
+      display: flex;
+      margin-bottom: 10px;
+    }
   }
